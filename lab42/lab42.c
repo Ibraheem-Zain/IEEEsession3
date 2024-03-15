@@ -11,7 +11,7 @@ int main (){
 void convert_to_binary (void){
     int remainder,number,num;
     int i= 0;
-    int counter= 0;
+    int counter= -1;
     int arr [32]={0};
     printf ("enter a number:\n");
     scanf ("%d",&number);
@@ -31,14 +31,14 @@ void convert_to_binary (void){
 
 if (num > 0){
     printf ("your number in binary is: ");
-    for (i=0; i < counter; ++i){
+    for (i=counter; i >= 0; --i){
         printf ("%d",arr[i]);
     }
     printf ("\n");
 }
 else{
     printf ("your number in binary is: -");
-    for (i=0; i < counter; ++i){
+    for (i=counter; i >= 0; --i){
         printf ("%d",arr[i]);
     }
     printf ("\n");
